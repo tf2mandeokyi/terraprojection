@@ -1,0 +1,34 @@
+.gradle
+gradle/.DS_Store
+.DS_Store
+
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+
+#our build stuff
+build.sh
+build.bat
+
+# other
+eclipse
+run
+*.log
+
+/logs/
+
+terraplusplus
