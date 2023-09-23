@@ -1,7 +1,5 @@
 package net.buildtheearth.terraprojection.config;
 
-import com.google.gson.JsonIOException;
-import com.google.gson.JsonParseException;
 import com.google.gson.TypeAdapter;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
