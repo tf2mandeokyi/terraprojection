@@ -33,7 +33,15 @@ public class ProjectionTest {
                 + "        }\n"
                 + "    }";
         GeographicProjection projection = TerraProjectionConstants.GSON.fromJson(bteProjectionJson, GeographicProjection.class);
+        testBteProjection(projection);
+    }
 
+    @Test
+    public void givenResourceFile_testReadabilityAndBteProjection() throws OutOfProjectionBoundsException {
+        testBteProjection(TerraProjectionConstants.BTE_PROJECTION);
+    }
+
+    private void testBteProjection(GeographicProjection projection) throws OutOfProjectionBoundsException {
         double[] geos = {
                 2.350987d, 48.856667d,
                 -74.005974d, 40.714268d,
